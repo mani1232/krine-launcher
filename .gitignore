@@ -19,7 +19,7 @@ captures
 node_modules/
 
 # Auto generated
-proto
+/proto
 
 # Logs
 logs
