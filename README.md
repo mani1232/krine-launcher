@@ -8,7 +8,7 @@
 ![Native](https://img.shields.io/badge/Native-ffffff)
 ![wasmJs](https://img.shields.io/badge/wasmJs-624FE8)
 
-This is a WebView based Minecraft launcher and written in Kotlin/WasmJs with Compose Multiplatform and Rust/Tauri.
+This is a WebView-based Minecraft launcher written in Kotlin/WasmJs using Compose Multiplatform and Rust/Tauri.
 
 For backend part we use Kotlin/JVM with [Ktor framework](https://ktor.io/)
 
