@@ -1,0 +1,210 @@
+[versions]
+composeMultiplatform = "1.11.0-alpha01"
+materialAdaptive = "1.3.0-alpha03"
+androidLifecycle = "2.10.0-alpha07"
+navigation3 = "1.1.0-alpha01"
+navigationevent = "1.0.0-rc02"
+window = "1.5.1"
+savedstate = "1.4.0"
+kotlin = "2.3.0"
+json5 = "0.5.0"
+kaml = "0.104.0"
+filekit = "0.12.0"
+koin = "4.2.0-beta2"
+compose-dnd = "0.4.0"
+compose-korender = "0.6.0"
+compose-haze = "1.7.1"
+composeIcons = "1.7.3"
+ksp = "2.3.4"
+store = "5.1.0-alpha07"
+multiplatformSettings = "1.3.0"
+ktor = "3.3.3"
+composeHotReload = "1.1.0-alpha03"
+logback = "1.5.22"
+exposed = "1.0.0-rc-4"
+postgresql = "1.1.1.RELEASE"
+ktoml = "0.7.1"
+rpc = "0.10.1"
+coroutines = "1.10.2"
+kotlinIo = "0.8.2"
+materialKolor = "5.0.0-alpha04"
+lyricist = "1.0.0-dev"
+multiplatformLocale = "0.10.0-SNAPSHOT"
+buildconfig = "0.17.1"
+flowmvi = "3.3.0-alpha02"
+proto = "1.10.0-RC"
+wire = "6.0.0-alpha01"
+
+[libraries]
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
+koin-compose = { module = "io.insert-koin:koin-compose", version.ref = "koin" }
+koin-compose-viewmodel = { module = "io.insert-koin:koin-compose-viewmodel", version.ref = "koin" }
+koin-compose-navigation3 = { module = "io.insert-koin:koin-compose-navigation3", version.ref = "koin" }
+koin-logger-slf4j = { module = "io.insert-koin:koin-logger-slf4j", version.ref = "koin" }
+koin-ktor = { module = "io.insert-koin:koin-ktor", version.ref = "koin" }
+
+compose-runtime = { module = "org.jetbrains.compose.runtime:runtime", version.ref = "composeMultiplatform" }
+compose-ui = { module = "org.jetbrains.compose.ui:ui", version.ref = "composeMultiplatform" }
+compose-foundation = { module = "org.jetbrains.compose.foundation:foundation", version.ref = "composeMultiplatform" }
+compose-material3 = { module = "org.jetbrains.compose.material3:material3", version.ref = "composeMultiplatform" }
+compose-material3-window = { module = "org.jetbrains.compose.material3:material3-window-size-class", version.ref = "composeMultiplatform" }
+compose-material3-adaptive = { module = "org.jetbrains.compose.material3:material3-adaptive-navigation-suite", version.ref = "composeMultiplatform" }
+compose-navigation3-ui = { module = "org.jetbrains.androidx.navigation3:navigation3-ui", version.ref = "navigation3" }
+compose-adaptive = { module = "org.jetbrains.compose.material3.adaptive:adaptive", version.ref = "materialAdaptive" }
+compose-adaptive-layout = { module = "org.jetbrains.compose.material3.adaptive:adaptive-layout", version.ref = "materialAdaptive" }
+compose-adaptive-navigation = { module = "org.jetbrains.compose.material3.adaptive:adaptive-navigation", version.ref = "materialAdaptive" }
+compose-lifecycle-runtime-compose = { module = "org.jetbrains.androidx.lifecycle:lifecycle-runtime-compose", version.ref = "androidLifecycle" }
+compose-lifecycle-runtime = { module = "org.jetbrains.androidx.lifecycle:lifecycle-runtime", version.ref = "androidLifecycle" }
+compose-lifecycle-navigation3 = { module = "org.jetbrains.androidx.lifecycle:lifecycle-viewmodel-navigation3", version.ref = "androidLifecycle" }
+compose-lifecycle-savedstate = { module = "org.jetbrains.androidx.lifecycle:lifecycle-viewmodel-savedstate", version.ref = "androidLifecycle" }
+compose-resources = { module = "org.jetbrains.compose.components:components-resources", version.ref = "composeMultiplatform" }
+compose-navigationevent = { module = "org.jetbrains.androidx.navigationevent:navigationevent-compose", version.ref = "navigationevent" }
+compose-savedstate = { module = "org.jetbrains.androidx.savedstate:savedstate-compose", version.ref = "savedstate" }
+compose-window = { module = "org.jetbrains.androidx.window:window-core", version.ref = "window" }
+compose-material-icons = { group = "org.jetbrains.compose.material", name = "material-icons-extended", version.ref = "composeIcons" }
+
+# Core KMP module
+flowmvi-core = { module = "pro.respawn.flowmvi:core", version.ref = "flowmvi" }
+# Compose multiplatform
+flowmvi-compose = { module = "pro.respawn.flowmvi:compose", version.ref = "flowmvi" }
+# Multiplatform state preservation
+flowmvi-savedstate = { module = "pro.respawn.flowmvi:savedstate", version.ref = "flowmvi" }
+# Remote debugging client
+flowmvi-debugger = { module = "pro.respawn.flowmvi:debugger-plugin", version.ref = "flowmvi" }
+
+serialization-json5 = { module = "li.songe:json5", version.ref = "json5" }
+serialization-yaml = { module = "com.charleskorn.kaml:kaml", version.ref = "kaml" }
+serialization-toml = { module = "com.akuleshov7:ktoml-core", version.ref = "ktoml" }
+serialization-protobuf = { module = "org.jetbrains.kotlinx:kotlinx-serialization-protobuf", version.ref = "proto" }
+
+compose-dnd = { module = "com.mohamedrejeb.dnd:compose-dnd", version.ref = "compose-dnd" }
+compose-korender = { module = "com.github.zakgof:korender", version.ref = "compose-korender" }
+compose-haze = { module = "dev.chrisbanes.haze:haze", version.ref = "compose-haze" }
+compose-haze-materials = { module = "dev.chrisbanes.haze:haze-materials", version.ref = "compose-haze" }
+compose-materialKolor = { module = "com.materialkolor:material-kolor", version.ref = "materialKolor" }
+compose-lyricist = { module = "cafe.adriel.lyricist:lyricist", version.ref = "lyricist" }
+compose-lyricist-processor = { module = "cafe.adriel.lyricist:lyricist-processor", version.ref = "lyricist" }
+store = { module = "org.mobilenativefoundation.store:store5", version.ref = "store" }
+multiplatformSettings = { module = "com.russhwolf:multiplatform-settings-no-arg", version.ref = "multiplatformSettings" }
+multiplatformLocale = { module = "com.vanniktech:multiplatform-locale", version.ref = "multiplatformLocale" }
+
+filekit-core = { module = "io.github.vinceglb:filekit-core", version.ref = "filekit" }
+filekit-dialogs = { module = "io.github.vinceglb:filekit-dialogs", version.ref = "filekit" }
+filekit-dialogs-compose = { module = "io.github.vinceglb:filekit-dialogs-compose", version.ref = "filekit" }
+
+# Exposed
+exposed = { module = "org.jetbrains.exposed:exposed-core", version.ref = "exposed" }
+exposed-datetime = { module = "org.jetbrains.exposed:exposed-kotlin-datetime", version.ref = "exposed" }
+exposed-json = { module = "org.jetbrains.exposed:exposed-json", version.ref = "exposed" }
+exposed-crypt = { module = "org.jetbrains.exposed:exposed-crypt", version.ref = "exposed" }
+exposed-r2dbc = { module = "org.jetbrains.exposed:exposed-r2dbc", version.ref = "exposed" }
+exposed-postgresql = { module = "org.postgresql:r2dbc-postgresql", version.ref = "postgresql" }
+exposed-migration = { module = "org.jetbrains.exposed:exposed-migration-r2dbc", version.ref = "exposed" }
+# Ktor
+ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+# Ktor server
+ktor-server-core = { module = "io.ktor:ktor-server-core", version.ref = "ktor" }
+ktor-server-cio = { module = "io.ktor:ktor-server-cio", version.ref = "ktor" }
+ktor-server-cors = { module = "io.ktor:ktor-server-cors", version.ref = "ktor" }
+ktor-server-compression = { module = "io.ktor:ktor-server-compression", version.ref = "ktor" }
+ktor-server-resources = { module = "io.ktor:ktor-server-resources", version.ref = "ktor" }
+ktor-server-status-pages = { module = "io.ktor:ktor-server-status-pages", version.ref = "ktor" }
+ktor-server-content-negotiation = { module = "io.ktor:ktor-server-content-negotiation", version.ref = "ktor" }
+# Ktor client
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-client-cio = { module = "io.ktor:ktor-client-cio", version.ref = "ktor" }
+ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
+
+# rpc
+rpc-client = { module = "org.jetbrains.kotlinx:kotlinx-rpc-krpc-client", version.ref = "rpc" }
+rpc-server = { module = "org.jetbrains.kotlinx:kotlinx-rpc-krpc-server", version.ref = "rpc" }
+rpc-serialization = { module = "org.jetbrains.kotlinx:kotlinx-rpc-krpc-serialization-protobuf", version.ref = "rpc" }
+# rpc ktor
+ktor-client-krpc = { module = "org.jetbrains.kotlinx:kotlinx-rpc-krpc-ktor-client", version.ref = "rpc" }
+ktor-server-krpc = { module = "org.jetbrains.kotlinx:kotlinx-rpc-krpc-ktor-server", version.ref = "rpc" }
+
+logback-classic = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
+
+kotlin-coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+kotlin-coroutines-swing = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-swing", version.ref = "coroutines" }
+kotlin-io = { module = "org.jetbrains.kotlinx:kotlinx-io-core", version.ref = "kotlinIo" }
+kotlin-io-okio = { module = "org.jetbrains.kotlinx:kotlinx-io-okio", version.ref = "kotlinIo" }
+
+[bundles]
+compose-full = [
+    "compose-runtime",
+    "compose-ui",
+    "compose-foundation",
+    "compose-material3",
+    "compose-material3-window",
+    "compose-material3-adaptive",
+    "compose-navigation3-ui",
+    "compose-adaptive",
+    "compose-adaptive-layout",
+    "compose-adaptive-navigation",
+    "compose-lifecycle-runtime-compose",
+    "compose-lifecycle-runtime",
+    "compose-lifecycle-navigation3",
+    "compose-lifecycle-savedstate",
+    "compose-resources",
+    "compose-navigationevent",
+    "compose-savedstate",
+    "compose-window",
+    "compose-material-icons",
+]
+
+flowmvi = [
+    "flowmvi-core",
+    "flowmvi-compose",
+    "flowmvi-savedstate",
+    "flowmvi-debugger",
+]
+
+server = [
+    "ktor-server-core",
+    "ktor-server-cio",
+    "ktor-server-cors",
+    "ktor-server-compression",
+    "ktor-server-resources",
+    "ktor-server-status-pages",
+    "ktor-server-content-negotiation",
+    "ktor-serialization-kotlinx-json",
+    "koin-core",
+    "koin-ktor",
+    "koin-logger-slf4j",
+    "logback-classic",
+    "serialization-toml",
+    "ktor-server-krpc",
+    "rpc-serialization",
+    "rpc-server",
+]
+
+client = [
+    "ktor-client-core",
+    "ktor-client-cio",
+    "ktor-client-content-negotiation",
+    "ktor-serialization-kotlinx-json",
+]
+
+exposed = [
+    "exposed",
+    "exposed-datetime",
+    "exposed-json",
+    "exposed-crypt",
+    "exposed-r2dbc",
+    "exposed-postgresql",
+    "exposed-migration",
+]
+
+[plugins]
+composeMultiplatform = { id = "org.jetbrains.compose", version.ref = "composeMultiplatform" }
+composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlinJvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+composeHotReload = { id = "org.jetbrains.compose.hot-reload", version.ref = "composeHotReload"}
+kotlinSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+ktor = { id = "io.ktor.plugin", version.ref = "ktor" }
+buildconfig = { id = "com.codingfeline.buildkonfig", version.ref = "buildconfig" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+rpc = { id = "org.jetbrains.kotlinx.rpc.plugin", version.ref = "rpc" }
+wire = { id = "com.squareup.wire", version.ref = "wire" }
