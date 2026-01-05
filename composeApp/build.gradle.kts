@@ -28,9 +28,5 @@ kotlin {
             implementation(kotlinWrappers.js)
             implementation(projects.shared)
         }
-
-        webMain.dependencies {
-            implementation(npm("@tauri-apps/api", "^2.9.1"))
-        }
     }
 }

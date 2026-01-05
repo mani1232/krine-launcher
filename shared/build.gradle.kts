@@ -25,6 +25,12 @@ kotlin {
             implementation(custom.serialization.protobuf)
             implementation(custom.kotlin.io)
         }
+        webMain.dependencies {
+            implementation(kotlinWrappers.js)
+            implementation(kotlinWrappers.browser)
+            implementation(custom.kotlin.coroutines)
+            implementation(npm("@tauri-apps/api", "^2.9.1"))
+        }
     }
 }
 
