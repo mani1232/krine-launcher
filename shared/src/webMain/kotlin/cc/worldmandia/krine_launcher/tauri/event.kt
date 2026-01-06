@@ -3,11 +3,12 @@
 
 package cc.worldmandia.krine_launcher.tauri
 
+import js.buffer.ArrayBuffer
 import js.core.JsInt
 import js.objects.JsPlainObject
 import js.promise.Promise
 
-external interface Event<T : JsAny?> {
+external interface Event<T : JsAny> {
   val event: JsString
   val id: JsInt
   val payload: T
@@ -18,13 +19,18 @@ external interface EventOptions {
   val target: JsString?
 }
 
-external fun <T : JsAny?> listen(
+@JsPlainObject
+external interface JsArrayBufferArg : JsAny {
+  var payload: ArrayBuffer?
+}
+
+external fun <T : JsAny> listen(
     event: JsString,
     handler: EventCallback<T>,
     options: EventOptions? = definedExternally,
 ): Promise<UnlistenFn>
 
-external fun <T : JsAny?> once(
+external fun <T : JsAny> once(
     event: JsString,
     handler: EventCallback<T>,
     options: EventOptions? = definedExternally,

@@ -7,7 +7,6 @@ import js.buffer.ArrayBuffer
 import js.core.JsInt
 import js.objects.JsPlainObject
 import js.promise.Promise
-import js.promise.await
 import web.http.Headers
 
 @JsPlainObject
@@ -23,7 +22,7 @@ open external class Resource(rid: Int) {
 
 external fun <T : ArrayBuffer?> invoke(
     cmd: JsString,
-    args: ArrayBuffer? = definedExternally,
+    args: JsAny? = definedExternally,
     options: InvokeOptions? = definedExternally,
 ): Promise<T>
 

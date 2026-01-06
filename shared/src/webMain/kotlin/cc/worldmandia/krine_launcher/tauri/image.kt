@@ -5,7 +5,6 @@ package cc.worldmandia.krine_launcher.tauri
 
 import js.core.JsInt
 import js.promise.Promise
-import js.promise.await
 
 external interface ImageSize : JsAny {
   val width: JsInt

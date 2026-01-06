@@ -36,9 +36,9 @@ open external class Webview(window: Window, label: JsString, options: WebviewOpt
     fun getCurrent(): Webview
   }
 
-  fun <T : JsAny?> listen(event: JsString, handler: EventCallback<T>): Promise<UnlistenFn>
+  fun <T : JsAny> listen(event: JsString, handler: EventCallback<T>): Promise<UnlistenFn>
 
-  fun <T : JsAny?> emit(event: JsString, payload: T? = definedExternally): Promise<JsAny?>
+  fun <T : JsAny> emit(event: JsString, payload: T = definedExternally): Promise<JsAny?>
 
   fun show(): Promise<JsAny?>
 
@@ -50,7 +50,9 @@ open external class Webview(window: Window, label: JsString, options: WebviewOpt
 
   fun setZoom(scaleFactor: JsDouble): Promise<JsAny?>
 
-  fun setPosition(position: LogicalPosition): Promise<JsAny?> // TODO LogicalPosition | PhysicalPosition | Position
+  fun setPosition(
+      position: LogicalPosition
+  ): Promise<JsAny?> // TODO LogicalPosition | PhysicalPosition | Position
 
   fun setSize(size: LogicalSize): Promise<JsAny?> // TODO LogicalSize | PhysicalSize | Size
 

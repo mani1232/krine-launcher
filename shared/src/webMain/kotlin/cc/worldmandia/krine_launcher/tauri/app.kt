@@ -3,9 +3,7 @@
 
 package cc.worldmandia.krine_launcher.tauri
 
-import js.core.JsPrimitives.toKotlinString
 import js.promise.Promise
-import js.promise.await
 
 external fun getVersion(): Promise<JsString>
 

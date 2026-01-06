@@ -5,10 +5,8 @@ package cc.worldmandia.krine_launcher.tauri
 
 import js.core.JsDouble
 import js.core.JsInt
-import js.core.JsPrimitives.toKotlinString
 import js.objects.JsPlainObject
 import js.promise.Promise
-import js.promise.await
 
 @JsPlainObject
 external interface WindowOptions {
@@ -50,11 +48,11 @@ open external class Window(label: JsString, options: WindowOptions? = definedExt
   }
 
   // События
-  fun <T : JsAny?> listen(event: JsString, handler: EventCallback<T>): Promise<UnlistenFn>
+  fun <T : JsAny> listen(event: JsString, handler: EventCallback<T>): Promise<UnlistenFn>
 
-  fun <T : JsAny?> once(event: JsString, handler: EventCallback<T>): Promise<UnlistenFn>
+  fun <T : JsAny> once(event: JsString, handler: EventCallback<T>): Promise<UnlistenFn>
 
-  fun <T : JsAny?> emit(event: JsString, payload: T? = definedExternally): Promise<JsAny?>
+  fun <T : JsAny> emit(event: JsString, payload: T = definedExternally): Promise<JsAny?>
 
   fun scaleFactor(): Promise<JsDouble>
 
@@ -119,4 +117,3 @@ open external class Window(label: JsString, options: WindowOptions? = definedExt
 
   fun startDragging(): Promise<JsAny?>
 }
-
