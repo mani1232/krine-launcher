@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalWasmJsInterop::class)
 
-package cc.worldmandia.krine_launcher.tauri
+package cc.worldmandia.krine_launcher
 
 import androidx.compose.runtime.*
 import js.core.JsPrimitives.toKotlinString
@@ -25,7 +25,7 @@ fun rememberTauriTheme(): State<String?> {
     try {
       awaitCancellation()
     } finally {
-      unlisten.invoke()
+      unlisten()
     }
   }
 

@@ -13,7 +13,7 @@ kotlin {
     wasmJs {
         browser {
             commonWebpackConfig {
-                devServer?.open = false // You can enable it for browser
+                devServer?.open = false // You can enable it for a browser
             }
         }
         generateTypeScriptDefinitions()
@@ -26,6 +26,8 @@ kotlin {
             implementation(custom.serialization.protobuf)
             implementation(kotlinWrappers.browser)
             implementation(kotlinWrappers.js)
+            implementation(kotlinWrappers.web)
+            implementation(kotlinWrappers.tauriAppsApi)
             implementation(projects.shared)
         }
     }

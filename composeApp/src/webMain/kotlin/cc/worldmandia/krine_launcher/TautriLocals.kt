@@ -1,4 +1,4 @@
-package cc.worldmandia.krine_launcher.tauri
+package cc.worldmandia.krine_launcher
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider

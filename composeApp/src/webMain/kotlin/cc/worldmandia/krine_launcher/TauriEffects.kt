@@ -1,4 +1,4 @@
-package cc.worldmandia.krine_launcher.tauri
+package cc.worldmandia.krine_launcher
 
 import androidx.compose.runtime.*
 import js.buffer.ArrayBuffer

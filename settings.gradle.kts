@@ -22,6 +22,7 @@ pluginManagement {
 
 dependencyResolutionManagement {
   repositories {
+    mavenCentral()
     maven("https://repo.worldmandia.cc/snapshots")
     mavenLocal()
     maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
@@ -36,12 +37,11 @@ dependencyResolutionManagement {
         includeGroupAndSubgroups("com.google")
       }
     }
-    mavenCentral()
   }
 
   versionCatalogs {
     create("kotlinWrappers") {
-      val wrappersVersion = "2026.1.3"
+      val wrappersVersion = "2026.1.9"
       from("org.jetbrains.kotlin-wrappers:kotlin-wrappers-catalog:$wrappersVersion")
     }
     create("custom") {
